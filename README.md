@@ -1,4 +1,4 @@
-# PRRG2-Biomarker_Discovery
+# PRRG2-Biomarker-Discovery
 
 Independent graduate-level research project exploring **PRRG2** 
 (Proline Rich and Gla Domain 2) as a potential cancer biomarker 
