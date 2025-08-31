@@ -18,3 +18,24 @@ using multi-omics datasets.
 Outputs:
 - `results/figures/`
 - `results/tables/`
+
+PRRG2-Biomarker-Discovery/
+├── config/
+│   └── paths.example.yml
+├── data/
+│   ├── metadata/
+│   ├── processed/
+│   └── raw/
+├── envs/
+│   └── environment.yml
+├── notebooks/
+│   ├── python/
+│   └── r/
+├── results/
+│   ├── figures/
+│   └── tables/
+├── scripts/
+│   ├── knime/
+│   ├── python/
+│   └── r/
+└── README.md
