@@ -19,23 +19,24 @@ Outputs:
 - `results/figures/`
 - `results/tables/`
 
-PRRG2-Biomarker-Discovery/
-├── config/
-│   └── paths.example.yml
-├── data/
-│   ├── metadata/
-│   ├── processed/
-│   └── raw/
-├── envs/
-│   └── environment.yml
-├── notebooks/
-│   ├── python/
-│   └── r/
-├── results/
-│   ├── figures/
-│   └── tables/
-├── scripts/
-│   ├── knime/
-│   ├── python/
-│   └── r/
-└── README.md
+## Project Structure**
+PRRG2-Biomarker_Discovery/
+├── config/ # machine-specific configs (e.g., paths.yml)
+│ └── paths.example.yml
+├── data/ # raw, processed, metadata (not versioned in git)
+│ ├── raw/
+│ ├── processed/
+│ └── metadata/
+├── envs/ # reproducible environments
+│ └── environment.yml
+├── notebooks/ # exploratory work
+│ ├── python/
+│ └── r/
+├── results/ # analysis outputs
+│ ├── figures/
+│ └── tables/
+├── scripts/ # analysis pipelines
+│ ├── python/
+│ ├── r/
+│ └── knime/
+└── README.md # project overview
