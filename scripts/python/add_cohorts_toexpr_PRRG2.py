@@ -1,0 +1,21 @@
+from pathlib import Path
+
+import pandas as pd
+
+PROJECT = Path("/Volumes/OWC_EnvoyPRO/PRRG2-Biomarker-Discovery")
+expr = pd.read_csv(
+    PROJECT / "results/tables/expr_tumor_aligned_to_survival.tsv", sep="\t", index_col=0
+)
+surv = pd.read_csv(PROJECT / "data/metadata/SURVIVAL_PANCANCER-9_Cohorts", dtype=str)
+
+# Transpose so patients = rows
+expr_T = expr.T
+
+# Merge survival (has _PATIENT and cohort info) with expression
+merged = surv.merge(expr_T, left_on="_PATIENT", right_index=True)
+
+print(merged.head())
+print("Final shape:", merged.shape)
+
+# Optional: save merged
+merged.to_csv(PROJECT / "results/tables/survival_with_expr.tsv", sep="\t", index=False)
