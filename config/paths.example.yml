@@ -1,0 +1,4 @@
+# Copy to config/paths.yml and edit for your machine
+data_dir: "/Volumes/OWC_EnvoyPro/TCGA"
+project_dir: "/Volumes/OWC_EnvoyPro/PRRG2-Biomarker_Discovery"
+results_dir: "{project_dir}/results"
