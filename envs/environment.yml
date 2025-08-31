@@ -1,0 +1,15 @@
+name: prrg2
+channels: [conda-forge, bioconda, defaults]
+dependencies:
+  - python=3.11
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - jupyterlab
+  - pyarrow
+  - pip
+  - pip:
+      - lifelines
+      - plotnine
