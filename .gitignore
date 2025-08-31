@@ -1,0 +1,25 @@
+# OS / editor
+.DS_Store
+.vscode/*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# R
+.Rhistory
+.Rproj.user/
+.RData
+renv/
+.Rprofile
+
+# Data & outputs
+data/
+!data/.gitkeep
+results/
+!results/figures/
+!results/tables/
+results/figures/*.png
+results/tables/*.tsv
